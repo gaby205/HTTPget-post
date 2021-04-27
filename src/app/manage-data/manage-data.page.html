@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>manageData</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-item> <ion-input type="text" placeholder="ID" [(ngModel)]="post.id"></ion-input> </ion-item>
+      <ion-item> <ion-input type="text" placeholder="First Name" [(ngModel)]="post.first_name"></ion-input> </ion-item>
+      <ion-item> <ion-input type="text" placeholder="Last Name" [(ngModel)]="post.last_name"></ion-input> </ion-item>
+      <ion-button (click)="add()">ADD DATA</ion-button>
+      <ion-button (click)="edit()">EDIT DATA</ion-button>
+      <ion-button (click)="delete()">DELETE DATA</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listAPI</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-item *ngFor="let dPOST of dataPOST.data">
+          id : {{dPOST.id}}
+          <br>
+          name : {{dPOST.first_name}} {{dPOST.last_name}}
+          <br>
+          avatar : {{dPOST.avatar}}
+          <br>
+          <br>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goToData()">
+      <ion-icon name="chevron-forward-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
